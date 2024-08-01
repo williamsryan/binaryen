@@ -85,6 +85,7 @@ set(passes_SOURCES
   PrintCallGraph.cpp
   PrintFeatures.cpp
   PrintFunctionMap.cpp
+  PrivacyPass.cpp
   RoundTrip.cpp
   SetGlobals.cpp
   SignaturePruning.cpp

@@ -104,6 +104,10 @@ Pass* createOptimizeAddedConstantsPropagatePass();
 Pass* createOptimizeInstructionsPass();
 Pass* createOptimizeCastsPass();
 Pass* createOptimizeForJSPass();
+
+// This is the test pass for implementing privacy-preserving functionality.
+Pass* createPrivacyPass();
+
 // Outlining currently relies on LLVM's SuffixTree, which we can't rely upon
 // when building Binaryen for Emscripten.
 #ifdef __EMSCRIPTEN__

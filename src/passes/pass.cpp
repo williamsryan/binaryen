@@ -550,6 +550,10 @@ void PassRegistry::registerPasses() {
                "removes local.tees, replacing them with sets and gets",
                createUnteePass);
   registerPass("vacuum", "removes obviously unneeded code", createVacuumPass);
+
+  // Pass registration for privacy-preserving work.
+  registerPass("privacy-pass", "Add NOPs after loads and stores", createPrivacyPass);
+
   // registerPass(
   //   "lower-i64", "lowers i64 into pairs of i32s", createLowerInt64Pass);
 
